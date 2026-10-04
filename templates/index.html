@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jasmitha A | AI & ML Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1120;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 18px 8%;
+            background: rgba(11, 17, 32, 0.95);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #38bdf8;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 100px 8%;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #0b1120, #172554);
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero h2 {
+            font-size: 25px;
+            color: #cbd5e1;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            color: #94a3b8;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: #38bdf8;
+            color: #0b1120;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 45px;
+        }
+
+        .section-title span {
+            color: #38bdf8;
+        }
+
+        .about {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            color: #cbd5e1;
+        }
+
+        .skills-container,
+        .projects-container,
+        .certificates-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+        .card .btn {
+               margin-top: 15px;
+               font-size: 14px;
+               padding: 10px 18px;
+        }
+
+
+        .card {
+            background: #111827;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #1e293b;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #38bdf8;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #94a3b8;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            color: #cbd5e1;
+            margin: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #060b16;
+            color: #64748b;
+        }
+
+        @media (max-width: 700px) {
+
+            nav ul {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero h2 {
+                font-size: 20px;
+            }
+        }
+        .certificate-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Jasmitha<span>.</span></div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Home -->
+    <section class="hero" id="home">
+
+        <div>
+            <h1>Hi, I'm <span>Jasmitha A</span></h1>
+
+            <h2>B.E CSE (AIML) Student</h2>
+
+            <p>
+                Passionate about Artificial Intelligence, Machine Learning,
+                Robotics and building innovative technology solutions.
+            </p>
+
+            <a href="#projects" class="btn">View My Projects</a>
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+
+        <h2 class="section-title">About <span>Me</span></h2>
+
+        <div class="about">
+
+            <p>
+                I am a B.E CSE (AIML) student with a strong interest in
+                Artificial Intelligence, Machine Learning and Robotics.
+                I enjoy learning new technologies and developing
+                practical projects that solve real-world problems.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2 class="section-title">My <span>Skills</span></h2>
+
+        <div class="skills-container">
+
+            <div class="card">
+                <h3>Python</h3>
+                <p>Programming and basic data science development.</p>
+            </div>
+
+            <div class="card">
+                <h3>C Programming</h3>
+                <p>Data structures and problem-solving fundamentals.</p>
+            </div>
+
+            <div class="card">
+                <h3>Machine Learning</h3>
+                <p>Understanding ML algorithms and model development.</p>
+            </div>
+
+            <div class="card">
+                <h3>HTML & CSS</h3>
+                <p>Creating responsive and modern websites.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2 class="section-title">My <span>Projects</span></h2>
+
+        <div class="projects-container">
+
+            <div class="card">
+                <h3>AI Resume Analyzer</h3>
+
+                <p>
+                    An AI-based application that analyzes resumes
+                    and identifies relevant skills and improvement areas.
+                </p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+
+            <div class="card">
+                <h3>Personal Portfolio</h3>
+
+                <p>
+                    A professional portfolio website built using
+                    HTML, CSS and Python Flask.
+                </p>
+
+                <a href="#" class="btn">View Project</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Certificates -->
+    <section id="certificates">
+
+        <h2 class="section-title">My <span>Certificates</span></h2>
+
+       <div class="certificates-container">
+
+    {% for certificate in certificates %}
+
+    <div class="card">
+        <div class="certificate-icon">🏆</div>
+
+        <h3>{{ certificate.name }}</h3>
+
+        <p>
+            Issued by: {{ certificate.issuer }}
+        </p>
+
+        {% if certificate.link != "#" %}
+            <a href="{{ certificate.link }}" target="_blank" class="btn">
+                View Certificate
+            </a>
+        {% endif %}
+
+    </div>
+
+    {% endfor %}
+
+</div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2 class="section-title">Contact <span>Me</span></h2>
+
+        <div class="contact">
+
+            <p>Email: <a href="mailto:a.jasmitha07@gmail.com">a.jasmitha07@gmail.com</a></p>
+
+            <p>GitHub: <a href="https://github.com/jasmitha07-tech" target="_blank">GitHub Profile</a></p>
+
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/jasmitha-a-975b72378/" target="_blank">LinkedIn Profile</a></p>
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>© 2026 Jasmitha A | B.E CSE (AIML)</p>
+
+    </footer>
+
+</body>
+</html>
